@@ -1,0 +1,36 @@
+.social-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px; /* Add spacing between links */
+    margin: 20px 0;
+    padding: 10px 0;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #4a90e2;
+}
+
+/* Smaller screens */
+@media (max-width: 768px) {
+    .social-links {
+        gap: 10px; /* Reduce spacing for smaller screens */
+    }
+    .social-links a {
+        font-size: 1rem; /* Smaller text size */
+    }
+}
+
+@media (max-width: 480px) {
+    .social-links {
+        flex-direction: column; /* Stack links vertically */
+        gap: 8px;
+    }
+}

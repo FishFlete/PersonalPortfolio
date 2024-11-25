@@ -1,0 +1,8 @@
+.body-part3 {
+    height: 100vh;
+    background: linear-gradient(to bottom, #003366, black); /* Dark blue to black */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

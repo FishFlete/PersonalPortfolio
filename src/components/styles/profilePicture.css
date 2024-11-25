@@ -1,0 +1,18 @@
+.profile-picture {
+    width: 120px;
+    height: 128px;
+    border-radius: 50%; /* Makes the container circular */
+    margin: 0 auto; /* Center the image horizontally */
+    border: 3px solid white; /* Clean border */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    position: relative; /* Allow fine positioning */
+    top: -40px; /* Adjust the image's vertical position */
+    background-color: white; /* Background for visibility */
+    overflow: hidden; /* Ensures the image doesn’t overflow the circular container */
+}
+
+.profile-picture img {
+    width: 100%; /* Scale the image width to fit */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove any extra inline spacing */
+}

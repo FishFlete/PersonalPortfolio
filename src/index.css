@@ -1,0 +1,14 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: auto; /* Allow the body to adjust based on the content height */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+#root {
+  height: auto; /* Adjust height based on content */
+  min-height: 100%; /* Ensure it takes at least the viewport height */
+  position: relative;
+  z-index: 1;
+}

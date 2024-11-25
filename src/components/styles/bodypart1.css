@@ -1,0 +1,8 @@
+.body-part1 {
+    height: 200vh; /* Full height */
+    background: linear-gradient(to bottom, #a8d3ff, #4a90e2); /* Matches wave to medium blue */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
