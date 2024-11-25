@@ -21,11 +21,43 @@
     font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    font-family : "FishFlete";
 }
 
 .cta-button:hover {
     background-color: #003366;
+}
+
+.view-resume-button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: "FishFlete";
+}
+
+.view-resume-button:hover {
+    background-color: #0056b3;
+}
+
+
+.contact-button {
+    background-color: #007BFF; /* Blue color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family : "FishFlete";
+}
+
+.contact-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
 }
 
 /* Smaller screens */
