@@ -1,6 +1,6 @@
 .wave-container {
     position: relative; /* Ensure proper stacking */
-    z-index: 10; /* Higher z-index to bring it above other elements */
+    z-index: 5; /* Higher z-index to bring it above other elements */
     width: 100%; /* Full width */
     height: 20vh; /* Adjust height to make the wave visible */
     overflow: hidden; /* Hide anything overflowing */

@@ -14,7 +14,7 @@ const WaveComponent: React.FC = () => {
                 style={{ display: 'flex'}}
                 options={{
                     height: 40,
-                    amplitude: 40,
+                    amplitude: 30,
                     speed: 0.15,
                     points: 8,
                 }}

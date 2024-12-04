@@ -16,3 +16,19 @@
     height: auto; /* Maintain aspect ratio */
     display: block; /* Remove any extra inline spacing */
 }
+
+@media (max-width: 1919px) {
+    .profile-picture {
+        width: 120px; /* Reduce size */
+        height: 120px;
+        top: 5px; /* Add some space from the top */
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-picture {
+        width: 100px; /* Further reduce size for very small screens */
+        height: 100px;
+        top: 20px; /* Increase space from the top */
+    }
+}

@@ -42,19 +42,21 @@
 }
 
 .bird-container-one{
-    animation-duration: 15s;
+    animation-duration: 18s;
     animation-delay: 1s;
+    top: 1%;
 }
 
 
-.bird-container-three{
+.bird-container-three {
     animation-duration: 14.6s;
     animation-delay: 9.5s;
+    top: 9%;
 }
 
-.bird-container-four {
+    .bird-container-four {
     animation-duration: 16s;
-    animation-delay: 10.25s;
+    animation-delay: 5s;
 }
 /* @keyframes fly-cycle {
     100%{
@@ -139,4 +141,25 @@
         transform: translateY(0vh) translateX(110vw) scale(0.45);
     }
 
+}
+
+@keyframes fly-left-one {
+    0% {
+        transform: scale(0.3) translateX(110vw);
+    }
+    20% {
+        transform: translateY(2vh) translateX(90vw) scale(0.4);
+    }
+    40% {
+        transform: translateY(0vh) translateX(70vw) scale(0.5);
+    }
+    60% {
+        transform: translateY(4vh) translateX(50vw) scale(0.6);
+    }
+    80% {
+        transform: translateY(2vh) translateX(30vw) scale(0.6);
+    }
+    100% {
+        transform: translateY(0vh) translateX(-10vw) scale(0.6);
+    }
 }

@@ -5,7 +5,7 @@ const CallToAction: React.FC = () => {
     return (
         <div className="cta-container">
             <a
-                href="public/Fisher Fletemeyer Resume2.png" // Path to your PDF in the `public` folder
+                href="public/Fisher-Fletemeyer-Resume.png" // Path to your PDF in the `public` folder
                 target="_blank" // Opens the PDF in a new tab
                 rel="noopener noreferrer" // Security best practice for external links
                 style={{textDecoration: 'none'}} // To remove default link styling
