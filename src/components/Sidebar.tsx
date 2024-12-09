@@ -1,50 +1,35 @@
-import React, { useState, useEffect } from 'react';
-import './styles/depthMeter.css';
+import React from "react";
+import DepthMeter from "./DepthMeter";
+import "./styles/sidebar.css"; // Ensure styling for Sidebar
 
 const Sidebar: React.FC = () => {
-    const [scrollPosition, setScrollPosition] = useState(0);
+    const sections = [
+        { id: "header", label: "Header", top: "0%" }, // Adjust top value as needed
+        { id: "bodyPart1", label: "Body Part 1", top: "20.7%" },
+        { id: "bodyPart2", label: "Body Part 2", top: "46.65%" },
+        { id: "bodyPart3", label: "Body Part 3", top: "72.5%" },
+    ];
 
-    const handleScroll = () => {
-        // Ensure the correct container is used for scrolling
-        const scrollableElement = document.documentElement || document.body;
-        const scrollTop = scrollableElement.scrollTop; // Current vertical scroll
-        const scrollHeight = scrollableElement.scrollHeight; // Total scrollable height
-        const clientHeight = scrollableElement.clientHeight; // Viewport height
-
-        console.log({
-            scrollTop,
-            scrollHeight,
-            clientHeight,
-            position: (scrollTop / (scrollHeight - clientHeight)) * 100
-        });
-
-        // Prevent division by zero if there is no scrollable content
-        const scrollableDistance = scrollHeight - clientHeight;
-        const position = scrollableDistance > 0 ? (scrollTop / scrollableDistance) * 100 : 0;
-
-        setScrollPosition(position); // Update scroll position percentage
+    const scrollToSection = (id: string) => {
+        const element = document.getElementById(id);
+        if (element) {
+            element.scrollIntoView({ behavior: "smooth" });
+        }
     };
 
-    useEffect(() => {
-        // Attach the scroll listener
-        window.addEventListener('scroll', handleScroll);
-
-        return () => {
-            // Remove listener on cleanup
-            window.removeEventListener('scroll', handleScroll);
-        };
-    }, []);
-
     return (
-        <div className="depth-meter">
-            <div className="dot" style={{ top: `${scrollPosition}%` }} />
-            <div className="markers">
-                {[...Array(11)].map((_, index) => (
-                    <div
-                        key={index}
-                        className="marker"
-                        style={{ top: `${index * 10}%` }}
-                    />
+        <div className="sidebar">
+            <DepthMeter />
+            <div className="scroll-buttons">
+                {sections.map((section) => (
+                    <button
+                        key={section.id}
+                        onClick={() => scrollToSection(section.id)}
+                        style={{ top: section.top }} // Use the top value
+                        title={`Go to ${section.label}`} // Tooltip for better UX
+                    >
+                        {section.label}
+                    </button>
                 ))}
             </div>
         </div>

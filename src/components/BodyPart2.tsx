@@ -3,7 +3,7 @@ import './styles/bodypart2.css';
 
 const BodyPart2: React.FC = () => {
     return (
-        <div className="body-part2">
+        <div className="body-part2" id={"bodyPart2"}>
             <p>This is BodyPart2</p>
         </div>
     );

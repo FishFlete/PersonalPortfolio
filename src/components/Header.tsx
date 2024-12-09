@@ -8,7 +8,7 @@ import Clouds from "./Clouds.tsx";
 
 const Header: React.FC = () => {
     return (
-        <header className="header">
+        <header className="header" id={"header"}>
             <div id={"header-top"}>
             <ProfilePicture />
             <h1>Fisher Fletemeyer</h1>
